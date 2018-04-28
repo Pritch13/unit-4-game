@@ -9,7 +9,9 @@ $(document).ready(function() {
     
     if(losses === 5) {
         $('.replace').hide();
-        $('.col-lg-3').hide();
+        $('.boxes').hide();
+        $('.col-lg-3').text('Play again...');
+        $('.col-lg-3').addClass('col-lg-12 play-again');
         $('#random').text('Game over!')
         $('#random').addClass('final');
         $('.col-lg-4').addClass('col-lg-12');
@@ -20,7 +22,9 @@ $(document).ready(function() {
 
     } else if (wins === 5){
         $('.replace').hide();
-        $('.col-lg-3').hide();
+        $('.boxes').hide();
+        $('.col-lg-3').text('Play again...');
+        $('.col-lg-3').addClass('col-lg-12 play-again');
         $('#random').text('Winner!')
         $('#random').addClass('final');
         $('.col-lg-4').addClass('col-lg-12');
@@ -180,10 +184,12 @@ $(document).ready(function() {
         }
       });
      }
-    }       // GameLoop function end
-
+        $('.col-lg-12').on('click', function(){
+            location.reload();
+        });
+    }               // GameLoop function end
     gameLoop();     // Calling gameLoop function // Game starts here
-    
-  });
+})
+
 
 

@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Fontdiner+Swanky" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href='assets/css/style.css'>
+    <script src='assets/javascript/game.js'></script>
+
+    <title>Super guess game!</title>
+  </head>
+  <body>
+
+    <h1 id="title">SUPER MARIO MYSTERY!</h1>
+
+    <audio autoplay loop>
+        <source src="smb.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="coinClip">
+        <source src="coin.mp3" type="audio/mp3"> </source>
+    </audio>
+
+    <audio id="score">
+        <source src="score.mp3" type="audio/mp3"> </source>
+    </audio>
+
+    <audio id="loss">
+        <source src="loss.mp3" type="audio/mp3"> </source>
+    </audio>
+          
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-lg-4 replace">
+                <p>
+                    Match yor score to the number for a win!</br></br>
+                    Click a myserty box below to randomly increase your score!</br>
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <h2 id="random">...</h2>
+            </div>
+
+            <div class="col-lg-4 replace">
+                <p id="score">Wins: <span id="wins"></span>  /5</p> </br>
+                <p>Losses: <span id="losses"></span>   /5</p> </br>
+                <p>Score: <span id="current-total"></span></p>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-lg-3">
+                <img class='img-fluid' id="box1" src="assets/images/mysbox.jpg" alt="mysterybox">
+            </div>
+            <div class="col-lg-3">
+                <img class='img-fluid' id="box2" src="assets/images/mysbox.jpg" alt="mysterybox">
+            </div>
+            <div class="col-lg-3">
+                <img class='img-fluid' id="box3" src="assets/images/mysbox.jpg" alt="mysterybox">
+            </div>
+            <div class="col-lg-3">
+                <img class='img-fluid' id="box4" src="assets/images/mysbox.jpg" alt="mysterybox">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>

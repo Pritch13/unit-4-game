@@ -41,6 +41,7 @@ p {
 h2 {
     text-align: center;
     font-size: 200px;
+    font-family: 'Pacifico', cursive;
 }
 
 
@@ -74,4 +75,8 @@ h2 {
     background-color: #ffdb58;
     border-radius: 100px;
     animation: blinker 1.5s linear infinite;
+}
+
+.font{
+    font-family: 'Bangers', cursive;
 }

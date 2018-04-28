@@ -7,26 +7,26 @@ $(document).ready(function() {
 
     function gameLoop() {
     
-    if(losses === 5) {
+    if(losses === 1) {
         $('.replace').hide();
         $('.boxes').hide();
         $('.col-lg-3').text('Play again...');
         $('.col-lg-3').addClass('col-lg-12 play-again');
         $('#random').text('Game over!')
-        $('#random').addClass('final');
+        $('#random').addClass('final font');
         $('.col-lg-4').addClass('col-lg-12');
         var audio = $('#theme')[0];
         audio.pause();
         var audio = $('#gameover')[0];
         audio.play();
 
-    } else if (wins === 5){
+    } else if (wins === 1){
         $('.replace').hide();
         $('.boxes').hide();
         $('.col-lg-3').text('Play again...');
         $('.col-lg-3').addClass('col-lg-12 play-again');
         $('#random').text('Winner!')
-        $('#random').addClass('final');
+        $('#random').addClass('final font');
         $('.col-lg-4').addClass('col-lg-12');
         var audio = $('#theme')[0];
         audio.pause();

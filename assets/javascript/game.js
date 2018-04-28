@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     function gameLoop() {
     
-    if(losses === 2) {
+    if(losses === 5) {
         $('.replace').hide();
         $('.col-lg-3').hide();
         $('#random').text('Game over!')
@@ -18,7 +18,7 @@ $(document).ready(function() {
         var audio = $('#gameover')[0];
         audio.play();
 
-    } else if (wins === 2){
+    } else if (wins === 5){
         $('.replace').hide();
         $('.col-lg-3').hide();
         $('#random').text('Winner!')

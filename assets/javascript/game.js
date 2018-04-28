@@ -7,20 +7,27 @@ $(document).ready(function() {
 
     function gameLoop() {
     
-    if(losses === 5) {
+    if(losses === 2) {
         $('.replace').hide();
         $('.col-lg-3').hide();
         $('#random').text('Game over!')
         $('#random').addClass('final');
         $('.col-lg-4').addClass('col-lg-12');
+        var audio = $('#theme')[0];
+        audio.pause();
+        var audio = $('#gameover')[0];
+        audio.play();
 
-
-    } else if (wins === 5){
+    } else if (wins === 2){
         $('.replace').hide();
         $('.col-lg-3').hide();
         $('#random').text('Winner!')
         $('#random').addClass('final');
         $('.col-lg-4').addClass('col-lg-12');
+        var audio = $('#theme')[0];
+        audio.pause();
+        var audio = $('#youwin')[0];
+        audio.play();
     } else {
 
       var currentTotal = 0;

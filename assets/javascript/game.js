@@ -7,12 +7,13 @@ $(document).ready(function() {
 
     function gameLoop() {
     
-    if(losses === 1) {
+    if(losses === 5) {
         $('.replace').hide();
         $('.col-lg-3').hide();
         $('#random').text('Game over!')
         $('#random').addClass('final');
         $('.col-lg-4').addClass('col-lg-12');
+
 
     } else if (wins === 5){
         $('.replace').hide();
